@@ -151,27 +151,40 @@ Because every product is worth remembering.
 
 ## 🛠 Local Setup
 
-After cloning this repository, enable the versioned git hooks once:
+After cloning this repository, run these two commands once (per machine):
 
 ```bash
-git config core.hooksPath .githooks
+git lfs install                       # fetch large files (images/videos) via Git LFS
+git config core.hooksPath .githooks   # enable the pre-commit secret scanner
 ```
 
-This activates the pre-commit secret scanner, which blocks commits that
-look like they contain API keys, tokens, or private keys.
+> Both are **local** settings that `git clone` does **not** carry over —
+> run them again on every new machine.
 
-> Note: `core.hooksPath` is a local setting and is **not** carried over by
-> `git clone`, so run this command again on every new machine.
+### Git hooks
 
-Keep private content (revenue details, raw interviews, secrets) out of the
-public history by placing it in `drafts/` or naming files `*.private.md` —
-both are ignored via `.gitignore`.
+`core.hooksPath` activates the pre-commit secret scanner, which blocks
+commits that look like they contain API keys, tokens, or private keys.
 
 To bypass the scanner on a false positive:
 
 ```bash
 git commit --no-verify
 ```
+
+### Large files (Git LFS)
+
+Images, videos, and other binaries (`*.png`, `*.jpg`, `*.webp`, `*.pdf`,
+`*.mp4`, …) are stored via **Git LFS** so the repo history stays lightweight.
+See [.gitattributes](.gitattributes) for the tracked patterns. Just `git add`
+them as usual — LFS handles the rest. If you clone without `git lfs install`,
+image files will appear as small text pointers instead of real content.
+
+### Private content
+
+Keep private content (revenue details, raw interviews, secrets) out of the
+public history by placing it in `drafts/` or naming files `*.private.md` —
+both are ignored via `.gitignore`.
 
 ---
 
