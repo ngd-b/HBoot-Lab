@@ -1,0 +1,31 @@
+#!/bin/sh
+# Pre-commit secret scanner for HBoot-Lab (public repo).
+# Blocks a commit if staged changes look like they contain secrets.
+# Bypass a false positive with:  git commit --no-verify
+
+# Only scan added lines in staged, non-deleted files.
+added=$(git diff --cached -U0 --diff-filter=ACM | grep -E '^\+' | grep -Ev '^\+\+\+')
+
+if [ -z "$added" ]; then
+  exit 0
+fi
+
+# Secret patterns. Keep these tight to avoid false positives.
+pattern='(api[_-]?key|secret[_-]?key|password|passwd|bearer[ ]|private[_-]?key)[[:space:]]*[:=]|BEGIN (RSA|OPENSSH|EC|DSA|PGP) PRIVATE KEY|sk-[a-zA-Z0-9]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|xox[baprs]-[A-Za-z0-9-]{10,}'
+
+hits=$(printf '%s\n' "$added" | grep -inE "$pattern")
+
+if [ -n "$hits" ]; then
+  echo "-------------------------------------------------------------"
+  echo "  Commit blocked: possible secret in staged changes."
+  echo "-------------------------------------------------------------"
+  printf '%s\n' "$hits"
+  echo "-------------------------------------------------------------"
+  echo "  If this is a false positive, re-run with:"
+  echo "      git commit --no-verify"
+  echo "  Or move private content into drafts/ or *.private.md"
+  echo "-------------------------------------------------------------"
+  exit 1
+fi
+
+exit 0
