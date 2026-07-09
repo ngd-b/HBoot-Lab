@@ -1,0 +1,36 @@
+# ---- Private drafts (public repo: keep sensitive content out of git) ----
+# Anything you don't want indexed: revenue details, raw interviews, secrets.
+drafts/
+private/
+*.local.md
+*.private.md
+*.secret.md
+
+# ---- Secrets / env ----
+.env
+.env.*
+*.key
+*.pem
+
+# ---- OS ----
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---- Editors / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Misc ----
+*.log
+*.tmp
+node_modules/
