@@ -92,7 +92,7 @@
 
 这些内容，对我来说都是新的挑战。
 
-开发过程中，我使用了 Claude、Qwen、GLM、MiMo、DeepSeek 等 AI 工具辅助。
+开发过程中，我使用了 Claude 工具进行辅助开发，使用模型包括Qwen、GLM、MiMo、DeepSeek 等 。
 
 AI 最大的帮助，并不是简单帮我写代码。
 
