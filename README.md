@@ -149,6 +149,32 @@ Because every product is worth remembering.
 
 ---
 
+## 🛠 Local Setup
+
+After cloning this repository, enable the versioned git hooks once:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+This activates the pre-commit secret scanner, which blocks commits that
+look like they contain API keys, tokens, or private keys.
+
+> Note: `core.hooksPath` is a local setting and is **not** carried over by
+> `git clone`, so run this command again on every new machine.
+
+Keep private content (revenue details, raw interviews, secrets) out of the
+public history by placing it in `drafts/` or naming files `*.private.md` —
+both are ignored via `.gitignore`.
+
+To bypass the scanner on a false positive:
+
+```bash
+git commit --no-verify
+```
+
+---
+
 ## 👋 About Me
 
 I'm HBoot, a frontend developer exploring AI, indie hacking, automation, and product development.
