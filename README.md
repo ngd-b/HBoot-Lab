@@ -151,13 +151,21 @@ Because every product is worth remembering.
 
 ## 🛠 Local Setup
 
-After cloning this repository, run these two commands once (per machine):
+### One-time clone (recommended)
 
 ```bash
-git lfs install                       # fetch large files (images/videos) via Git LFS
+GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:ngd-b/HBoot-Lab.git
+cd HBoot-Lab
 git config core.hooksPath .githooks   # enable the pre-commit secret scanner
+git lfs install                       # register LFS smudge/clean filters
+git lfs pull                          # download real images/videos
 ```
 
+> **Why `GIT_LFS_SKIP_SMUDGE=1`?** If Git LFS is not installed (or was
+> uninstalled), the smudge filter fails during checkout and `git clone`
+> errors out. Skipping smudge lets clone succeed — then `git lfs pull`
+> downloads everything once LFS is ready.
+>
 > Both are **local** settings that `git clone` does **not** carry over —
 > run them again on every new machine.
 
