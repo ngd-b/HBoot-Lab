@@ -10,15 +10,21 @@
 Koa Business API ─────────────── PostgreSQL
     │                              用户 / 积分 / 任务 / RBAC
     │
-    ├── 头像文件 ──────────────── MinIO
+    ├── 头像文件 ──────────────── Shared MinIO
     │
-    └── 上传 / 触发 / 查询
+    └── 上传 / 触发 / 查询 / 图片代理
             ▼
-      AI Cutout Service
-            │
-            ├── 任务队列与文件存储
-            └── AI Inference Model
-                  BiRefNet → isnet-general-use
+      FastAPI Cutout API
+            ├── Shared Redis
+            │     任务队列 / 状态 / TTL / API Key
+            ├── Shared MinIO
+            │     input/{jobId}.jpg
+            │     output/{jobId}.png
+            └── HTTP Task API
+                    ▼
+              Inference Worker
+                    └── rembg + ONNX Runtime
+                          isnet-general-use
 
 Next.js Website / Admin ──────── Koa Business API
 ```
@@ -43,14 +49,25 @@ Next.js Website / Admin ──────── Koa Business API
 
 ## AI Service
 
-AI 推理不在业务 API 进程中运行。业务服务通过 `CUTOUT_SERVICE_URL` 调用独立抠图服务：
+AI 推理位于独立的 `bg-remove` 仓库，不在 Koa 业务 API 进程中运行。业务服务通过 `CUTOUT_SERVICE_URL` 调用 FastAPI：
 
 - 上传图片并获得 `jobId`
 - 触发异步处理
 - 查询任务状态
 - 下载输入图和透明结果图
 
-早期使用 BiRefNet，当前产品档案记录为 `isnet-general-use`。模型服务源码不在当前产品业务仓库中。
+FastAPI 将任务压入 Redis。Worker 每两秒通过 HTTP 拉取任务，直接从 MinIO 下载输入图，使用 rembg 和 ONNX Runtime 推理，再将透明 PNG 写回 MinIO，并回调 API。
+
+当前使用 `isnet-general-use` 模型。Worker 运行在 3 GB 内存限制下，只使用一个 ONNX 线程，并在每次推理后主动释放图片和张量内存。
+
+### Reliability
+
+- Worker 单个任务最多重试 3 次，并使用指数退避
+- 当前任务 ID 写入本地锁文件，Worker 崩溃重启后会把孤儿任务标记为失败
+- Redis 和 MinIO 操作带瞬时断线重试
+- 每个任务拥有 TTL，过期后自动清理 Redis 状态和 MinIO 输入、输出文件
+- Koa 业务服务发现任务失败、丢失或超时后，将任务标记为失败并退还积分
+- Koa 与 FastAPI 之间使用 API Key + Token 双请求头认证
 
 ## Data
 
@@ -64,9 +81,11 @@ PostgreSQL 主要保存：
 
 ## Deployment
 
-- Koa API、Next.js Web 和 PostgreSQL 通过 Docker 部署
+- Koa API、Next.js Web、产品 PostgreSQL、FastAPI Cutout API 和 Worker 通过 Docker 部署
 - GitHub Actions 按 API、Web 标签分别发布
 - Nginx 负责 HTTPS、反向代理和请求限流
-- 已加入 `infra-net`，头像使用公共 MinIO
+- Koa 与 `bg-remove` 都加入公共 `infra-net`
+- Koa 使用公共 MinIO 保存头像
+- `bg-remove` 使用公共 Redis 保存队列和状态，使用公共 MinIO 保存抠图输入与结果
 - PostgreSQL 当前仍由产品自己的容器提供
-- Redis 已预留配置，但运行时限流和任务逻辑尚未接入 Redis
+- Koa 自身已预留 Redis 配置，但应用层限流尚未接入；产品的 AI 推理链路已经通过 `bg-remove` 使用 Redis

@@ -58,9 +58,19 @@ The goal is to leave a complete record of every project.
 | AI 发票助手 | 🚧 Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
 | Tool Website | ⏸ Paused | `products/tool-website/` |
 
-The three active products are maintained in separate source-code repositories.
-Their shared PostgreSQL, Redis, and MinIO services are documented in
-[infrastructure/common-infra.md](infrastructure/common-infra.md).
+The active products and platform services are maintained in separate
+source-code repositories.
+
+## 🧱 Shared Platforms
+
+| Platform | Status | Record |
+| --- | --- | --- |
+| Common Infrastructure | ✅ Running / Iterating | [common-infra](infrastructure/common-infra.md) |
+| Unified Auth | 🧪 In Development / Not Integrated | [unified-auth](infrastructure/unified-auth.md) |
+
+Common Infrastructure provides shared PostgreSQL, Redis, and MinIO services.
+Unified Auth is still being developed and tested; none of the products depend
+on it yet.
 
 ---
 

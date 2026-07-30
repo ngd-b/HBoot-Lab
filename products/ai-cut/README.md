@@ -36,14 +36,17 @@
 | Layer | Technology |
 | --- | --- |
 | Mini Program | 微信小程序原生框架 |
-| API | Node.js + Koa + TypeScript |
+| Business API | Node.js + Koa + TypeScript |
+| Cutout API | Python + FastAPI |
+| Inference Worker | rembg + ONNX Runtime |
 | Database | PostgreSQL + Prisma |
 | Website / Admin | Next.js 16 + React 19 + Tailwind CSS |
+| Queue / Status | Redis |
 | Object Storage | MinIO |
 | Deployment | Docker + GitHub Actions + Nginx |
-| AI Model | BiRefNet（第一版）、isnet-general-use（当前记录） |
+| AI Model | BiRefNet（早期）、isnet-general-use（当前） |
 
-AI 推理由独立抠图服务提供，业务 API 负责微信身份、积分、任务记录和结果代理。
+业务 API 负责微信身份、积分、任务记录和结果代理；独立的 `bg-remove` 服务负责文件保存、任务排队和 ONNX 模型推理。
 
 ## Documents
 

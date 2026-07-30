@@ -48,13 +48,19 @@
 
 ## Current Product Adoption
 
-| Product | PostgreSQL | Redis | MinIO |
+| Product / Service | PostgreSQL | Redis | MinIO |
 | --- | --- | --- | --- |
 | AI 发票助手 | ✅ Shared | ✅ Shared queue | ✅ Shared |
-| 智能去背景 | ⏳ Product container | ⏳ Config only | ✅ Shared |
+| 智能去背景业务服务 | ⏳ Product container | ⏳ Config only | ✅ Shared avatars |
+| 智能去背景推理服务 | — | ✅ Shared queue / status | ✅ Shared input / output |
 | 急用英语 | — | — | — |
+| Unified Auth | 🧪 Planned | 🧪 Planned | — |
 
-急用英语当前使用 JSON、内存 Session、SQLite 和本地持久化卷，保持轻量单机架构。智能去背景已经加入 `infra-net`，但 PostgreSQL 仍由自己的 Compose 管理，Redis 也尚未进入运行逻辑。
+急用英语当前使用 JSON、内存 Session、SQLite 和本地持久化卷，保持轻量单机架构。
+
+智能去背景分为两个仓库：Koa 业务服务的 PostgreSQL 仍由自己的 Compose 管理，Redis 仅有预留配置；独立 `bg-remove` 推理服务已经使用公共 Redis 和 MinIO 完成任务排队、状态管理及图片存储。
+
+Unified Auth 的 Compose 已配置接入 `infra-net`，计划使用公共 PostgreSQL 和 Redis，但平台尚未测试完成，也没有接入现有产品，因此不计入已运行的产品依赖。
 
 ## Why It Matters
 
