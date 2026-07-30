@@ -38,26 +38,29 @@ The goal is to leave a complete record of every project.
 
 ```text
 .
-├── projects/          # Product development logs
-├── experiments/       # AI & technical experiments
+├── products/          # Product profiles, architecture, roadmaps, and launch reviews
+├── infrastructure/    # Shared infrastructure and engineering decisions
+├── content/           # Multi-platform articles and publishing assets
+│   ├── wechat/        # WeChat Official Account articles
+│   └── xiaohongshu/   # Xiaohongshu content
 ├── journals/          # Development journals
-├── reviews/           # Weekly / Monthly reviews
-├── ideas/             # Product ideas
-├── marketing/         # SEO, growth, promotion
-├── assets/            # Images, diagrams, screenshots
-└── templates/         # Writing templates
+└── ideas/             # Product ideas
 ```
 
 ---
 
 ## 🚀 Current Projects
 
-| Project                    | Status       |
-| -------------------------- | ------------ |
-| AI Background Remover      | ✅ Online    |
-| Quick English Mini Program | ✅ Online    |
-| Personal Website           | ✅ Online    |
-| Tool Website               | 🚧 Iterating |
+| Project | Status | Product Record |
+| --- | --- | --- |
+| 智能去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
+| 急用英语 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
+| AI 发票助手 | 🚧 Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
+| Tool Website | ⏸ Paused | `products/tool-website/` |
+
+The three active products are maintained in separate source-code repositories.
+Their shared PostgreSQL, Redis, and MinIO services are documented in
+[infrastructure/common-infra.md](infrastructure/common-infra.md).
 
 ---
 
