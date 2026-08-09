@@ -1,0 +1,46 @@
+{
+  "repositories": [
+    {
+      "name": "智能去背景",
+      "path": "../cutout",
+      "kind": "product",
+      "group": "智能去背景"
+    },
+    {
+      "name": "智能去背景服务",
+      "path": "../cutout-server",
+      "kind": "product-component",
+      "group": "智能去背景"
+    },
+    {
+      "name": "急用英语",
+      "path": "../urgent-English",
+      "kind": "product",
+      "group": "急用英语"
+    },
+    {
+      "name": "AI 发票助手",
+      "path": "../ai-invoice",
+      "kind": "product",
+      "group": "AI 发票助手"
+    },
+    {
+      "name": "技术博客",
+      "path": "/Users/admin/giteeCode/learning-blog",
+      "kind": "technical-content",
+      "group": "技术博客"
+    },
+    {
+      "name": "公共基础设施",
+      "path": "../common-infra",
+      "kind": "infrastructure",
+      "group": "基础设施"
+    },
+    {
+      "name": "统一用户平台",
+      "path": "../unified-auth",
+      "kind": "infrastructure",
+      "group": "基础设施"
+    }
+  ]
+}

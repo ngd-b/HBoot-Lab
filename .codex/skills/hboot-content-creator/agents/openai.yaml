@@ -1,0 +1,4 @@
+interface:
+  display_name: "HBoot Content Creator"
+  short_description: "扫描产品与技术仓库更新，评估选题并创作 HBoot 公众号文章"
+  default_prompt: "Use $hboot-content-creator to scan recent repository updates, choose the strongest topic, and draft the next HBoot article."
