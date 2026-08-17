@@ -34,3 +34,4 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 node_modules/
+.firecrawl/
