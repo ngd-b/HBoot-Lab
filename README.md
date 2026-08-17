@@ -55,22 +55,24 @@ The goal is to leave a complete record of every project.
 | --- | --- | --- |
 | 智能去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
 | 急用英语 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
-| AI 发票助手 | 🚧 Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
+| AI 发票助手 | ✅ Online / Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
 | Tool Website | ⏸ Paused | `products/tool-website/` |
 
 The active products and platform services are maintained in separate
 source-code repositories.
+
+Last progress sync: **2026-08-17**.
 
 ## 🧱 Shared Platforms
 
 | Platform | Status | Record |
 | --- | --- | --- |
 | Common Infrastructure | ✅ Running / Iterating | [common-infra](infrastructure/common-infra.md) |
-| Unified Auth | 🧪 In Development / Not Integrated | [unified-auth](infrastructure/unified-auth.md) |
+| Unified Auth | 🧪 Core Flow Implemented / Not Integrated | [unified-auth](infrastructure/unified-auth.md) |
 
 Common Infrastructure provides shared PostgreSQL, Redis, and MinIO services.
-Unified Auth is still being developed and tested; none of the products depend
-on it yet.
+Unified Auth has completed its core account flow and Web authorization-code
+flow, but none of the products depend on it yet.
 
 ---
 

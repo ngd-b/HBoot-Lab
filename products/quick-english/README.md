@@ -14,19 +14,20 @@
 
 ## Current Features
 
-- 6 类、61 个真实场景
-- 搜索、分类浏览和场景收藏
+- 6 类、100 个真实场景
+- 关键词与自然语言语义搜索、分类浏览和场景收藏
 - 每个场景默认提供 5 句核心对话
-- 英语原声播放与多档语速
+- 双角色英语原声播放与多档语速
 - 微信录音跟读
 - Whisper 语音识别与逐句发音评分
 - DeepSeek“换一批”，重新生成当前场景的 5 句对话
-- 同分类场景快速切换
-- 本地练习历史和设置
+- 今日场景、连续学习天数和学习热力图
+- 同分类连续练习、结果复盘和薄弱句重练
+- 练习历史、收藏和设置的服务端同步
 - 微信静默登录
-- Next.js 产品官网
+- Next.js 产品官网与 Web 学习台
 - 微信搜一搜结构化页面推送
-- 用户和关键行为的轻量统计
+- 用户学习行为统计和运营看板
 
 ## Product Principles
 
@@ -45,7 +46,9 @@
 | ASR | faster-whisper |
 | TTS | Piper / Kokoro ONNX |
 | Content | JSON 场景文件 |
-| Statistics | SQLite |
+| Database | PostgreSQL |
+| Session / Cache | Redis |
+| Audio Storage | MinIO |
 | Website | Next.js 16 + React 19 + Tailwind CSS |
 | Deployment | Docker + GitHub Actions + Nginx |
 

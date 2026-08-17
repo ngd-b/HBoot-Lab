@@ -23,8 +23,12 @@ Koa Business API ─────────────── PostgreSQL
             └── HTTP Task API
                     ▼
               Inference Worker
-                    └── rembg + ONNX Runtime
-                          isnet-general-use
+                    └── Provider Router
+                          ├── rembg + ONNX Runtime
+                          │     isnet-general-use
+                          ├── Volcengine AI MediaKit
+                          ├── Aliyun ImageSeg
+                          └── remove.bg
 
 Next.js Website / Admin ──────── Koa Business API
 ```
@@ -44,8 +48,10 @@ Next.js Website / Admin ──────── Koa Business API
 - 负责微信登录、JWT、用户、积分、任务记录和管理后台
 - 上传前调用微信图片安全检查
 - 将图片和处理请求转发给独立抠图服务
+- 根据 Standard / Plus 和任务类型选择去背景后端，并保存任务等级快照
 - 每 5 秒轮询处理中任务，完成后更新状态，失败或超时则退款
 - 图片输出通过业务 API 代理，避免向客户端暴露内部服务凭据
+- 高清编辑导出在服务端基于原始结果重放裁剪、旋转、翻转和调色步骤，并使用短时令牌、像素上限与串行队列保护资源
 
 ## AI Service
 
@@ -56,9 +62,9 @@ AI 推理位于独立的 `bg-remove` 仓库，不在 Koa 业务 API 进程中运
 - 查询任务状态
 - 下载输入图和透明结果图
 
-FastAPI 将任务压入 Redis。Worker 每两秒通过 HTTP 拉取任务，直接从 MinIO 下载输入图，使用 rembg 和 ONNX Runtime 推理，再将透明 PNG 写回 MinIO，并回调 API。
+FastAPI 将任务和所选 Provider 压入 Redis。Worker 直接消费队列、从 MinIO 下载输入图，调用本地 ONNX 或配置的第三方去背景 Provider，再将透明 PNG 写回 MinIO，并回调 API。
 
-当前使用 `isnet-general-use` 模型。Worker 运行在 3 GB 内存限制下，只使用一个 ONNX 线程，并在每次推理后主动释放图片和张量内存。
+本地推理当前使用 `isnet-general-use` 模型；服务也支持按通用、人像和商品场景路由到火山引擎，并保留阿里云与 remove.bg Provider。Worker 运行在 3 GB 内存限制下，只使用一个 ONNX 线程，并在每次本地推理后主动释放图片和张量内存。
 
 ### Reliability
 
@@ -68,6 +74,7 @@ FastAPI 将任务压入 Redis。Worker 每两秒通过 HTTP 拉取任务，直�
 - 每个任务拥有 TTL，过期后自动清理 Redis 状态和 MinIO 输入、输出文件
 - Koa 业务服务发现任务失败、丢失或超时后，将任务标记为失败并退还积分
 - Koa 与 FastAPI 之间使用 API Key + Token 双请求头认证
+- 大图展示使用轻量 WebP 预览，保存和编辑导出仍基于完整分辨率结果
 
 ## Data
 
