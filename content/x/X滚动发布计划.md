@@ -1,5 +1,7 @@
 # X 滚动发布计划
 
+账号：[X @bhboot42633](https://x.com/bhboot42633)
+
 ## 发布规则
 
 - 发布语言：英文；中文只用于校对与复用。
@@ -15,8 +17,8 @@
 | --- | --- | --- | --- |
 | 01 | 2026-08-25 | [Build for the task, not the demo](posts/01-build-for-the-task-not-the-demo.md) | 已发布 |
 | 02 | 2026-08-28 21:30 | [Measure the behavior your hypothesis predicts](posts/02-measure-the-behavior-your-hypothesis-predicts.md) | 待发布 |
-| 03 | 2026-08-29 21:30 | [Same identity does not mean same account data](posts/03-same-identity-does-not-mean-same-account-data.md) | 待发布 |
-| 04 | 2026-08-30 21:30 | [Three rules for ads in utility products](posts/04-three-rules-for-ads-in-utility-products.md) | 待发布 |
+| 03 | 2026-08-26 | [Same identity does not mean same account data](posts/03-same-identity-does-not-mean-same-account-data.md) | 已发布 |
+| 04 | 2026-08-26 | [Three rules for ads in utility products](posts/04-three-rules-for-ads-in-utility-products.md) | 已发布 |
 | 05 | 2026-08-25 | [Reliability is part of the product](posts/05-reliability-is-part-of-the-product.md) | 已发布 |
 | 06 | 2026-08-25 | [Reuse existing outputs](posts/06-reuse-existing-outputs.md) | 已发布 |
 | 07 | 2026-09-02 21:30 | [One PDF is not always one invoice](posts/07-one-pdf-is-not-always-one-invoice.md) | 待发布 |

@@ -83,6 +83,14 @@ Every article should answer at least one of these questions:
 
 Readers should be able to understand the thinking behind the product, not just the implementation.
 
+For product promotion, lead with a real user situation and the cost or frustration it creates. Only introduce the product after the reader understands the problem, and connect each product capability to the specific part of the problem it solves. State the product's limits honestly. Do not open with a feature list or remove the product entirely in the name of being helpful.
+
+Public naming for the receipt mini program:
+
+- Full name: 小票智能归类工具
+- Short name: 小票归类
+- “AI 发票助手” is an internal project label, not the mini program's public name. Do not use it as the product name or WeChat search term in public content.
+
 ---
 
 ## Content Workflow

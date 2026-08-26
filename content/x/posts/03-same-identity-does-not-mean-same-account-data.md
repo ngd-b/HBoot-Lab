@@ -1,7 +1,8 @@
 # 03｜Same identity does not mean same account data
 
-- 日期：2026-08-29 21:30
-- 状态：待发布
+- 日期：2026-08-26
+- 状态：已发布
+- 实际时间：待补充
 
 ## English
 
