@@ -25,6 +25,7 @@
 | 08 | 2026-09-03 21:30 | [Three invoice fields to verify](posts/08-three-invoice-fields-to-verify.md) | 待发布 |
 | 09 | 2026-09-04 21:30 | [Design backward from the deliverable](posts/09-design-backward-from-the-deliverable.md) | 待发布 |
 | 10 | 2026-09-05 21:30 | [Less choice can create more practice](posts/10-less-choice-can-create-more-practice.md) | 待发布 |
+| 11 | 2026-08-27 | [The second video has a starting point](posts/11-the-second-video-has-a-starting-point.md) | 已发布 |
 
 ## 每日进度帖
 
