@@ -1,7 +1,8 @@
 # 10｜Less choice can create more practice
 
-- 日期：2026-09-05 21:30
-- 状态：待发布
+- 日期：2026-08-28
+- 状态：已发布
+- 实际时间：待补充
 
 ## English
 
