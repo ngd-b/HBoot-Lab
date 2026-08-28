@@ -22,6 +22,8 @@
 | 06 | 2026-08-25 | [Reuse existing outputs](posts/06-reuse-existing-outputs.md) | 已发布 |
 | 10 | 2026-08-28 | [Less choice can create more practice](posts/10-less-choice-can-create-more-practice.md) | 已发布 |
 | 11 | 2026-08-27 | [The second video has a starting point](posts/11-the-second-video-has-a-starting-point.md) | 已发布 |
+| 12 | 2026-08-28 | [Know when not to fill a field](posts/12-know-when-not-to-fill-a-field.md) | 已发布 |
+| 13 | 2026-08-28 | [The preview is a promise](posts/13-the-preview-is-a-promise.md) | 已发布 |
 
 ## 每日进度帖
 
@@ -31,4 +33,4 @@
 
 每连续发布 7 天复盘一次：比较曝光、回复、转发、收藏、纯文字与配图表现，以及长期主帖和当天进度帖的差异。若某个主题回应明显更好，继续深入同一个用户问题，不重复原句。
 
-最近一次素材扫描时间：`2026-08-25T08:49:39+08:00`
+最近一次素材扫描时间：`2026-08-28T12:03:37+08:00`
