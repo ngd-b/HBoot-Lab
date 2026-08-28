@@ -24,6 +24,7 @@
 | 11 | 2026-08-27 | [The second video has a starting point](posts/11-the-second-video-has-a-starting-point.md) | 已发布 |
 | 12 | 2026-08-28 | [Know when not to fill a field](posts/12-know-when-not-to-fill-a-field.md) | 已发布 |
 | 13 | 2026-08-28 | [The preview is a promise](posts/13-the-preview-is-a-promise.md) | 已发布 |
+| 14 | 2026-08-28 | [Shared AI capabilities, separate product data](posts/14-shared-ai-capabilities-separate-product-data.md) | 已发布 |
 
 ## 每日进度帖
 
