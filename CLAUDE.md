@@ -72,6 +72,8 @@ Write from real experience.
 
 Ideas that have not entered implementation, validation, or a concrete experiment stay under `ideas/`. Do not turn them into public posts, articles, or publishing plans.
 
+Public content must lead with a problem, judgment, or method that the reader can use. The author's products and personal experience are supporting evidence, not the main subject. Reframe drafts that mainly describe what the author built or did before publishing them.
+
 Do not invent stories.
 
 Every article should answer at least one of these questions:
