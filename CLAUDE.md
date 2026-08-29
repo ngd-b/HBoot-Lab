@@ -70,6 +70,8 @@ These belong in **Learning-Blog**.
 
 Write from real experience.
 
+Ideas that have not entered implementation, validation, or a concrete experiment stay under `ideas/`. Do not turn them into public posts, articles, or publishing plans.
+
 Do not invent stories.
 
 Every article should answer at least one of these questions:
