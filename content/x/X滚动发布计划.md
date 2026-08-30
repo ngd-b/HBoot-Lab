@@ -26,6 +26,7 @@
 | 13 | 2026-08-28 | [The preview is a promise](posts/13-the-preview-is-a-promise.md) | 已发布 |
 | 14 | 2026-08-28 | [Shared AI capabilities, separate product data](posts/14-shared-ai-capabilities-separate-product-data.md) | 已发布 |
 | 15 | 2026-08-29 | [Build prepares, runtime stays restricted](posts/15-build-prepares-runtime-stays-restricted.md) | 待发布 |
+| 16 | 2026-08-30 | [Low revenue, high UX cost](posts/16-low-revenue-high-ux-cost.md) | 已发布 |
 
 ## 每日进度帖
 
@@ -35,4 +36,4 @@
 
 每连续发布 7 天复盘一次：比较曝光、回复、转发、收藏、纯文字与配图表现，以及长期主帖和当天进度帖的差异。若某个主题回应明显更好，继续深入同一个用户问题，不重复原句。
 
-最近一次素材扫描时间：`2026-08-29T21:51:56+08:00`
+最近一次素材扫描时间：`2026-08-30T13:41:23+08:00`
