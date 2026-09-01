@@ -28,6 +28,7 @@
 | 15 | 2026-08-29 | [Build prepares, runtime stays restricted](posts/15-build-prepares-runtime-stays-restricted.md) | 待发布 |
 | 16 | 2026-08-30 | [Low revenue, high UX cost](posts/16-low-revenue-high-ux-cost.md) | 已发布 |
 | 17 | 2026-09-02 | [The product is the pack](posts/17-the-product-is-the-pack.md) | 已发布 |
+| 18 | 2026-09-02 | [Placement changes the trade-off](posts/18-placement-changes-the-tradeoff.md) | 已发布 |
 
 ## 每日进度帖
 
