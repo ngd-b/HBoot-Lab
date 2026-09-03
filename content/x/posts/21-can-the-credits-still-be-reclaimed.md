@@ -1,23 +1,27 @@
 # 21｜Can the credits still be reclaimed?
 
-- 日期：2026-09-02
-- 状态：待发布，计划稍晚发布
+- 日期：2026-09-04
+- 状态：暂缓，单条帖子需要解释过多前提
 
 ## English
 
-> Say someone buys 100 credits, spends 30, but still has 120. Should the refund be blocked?
+> Someone buys 100 credits, uses 30, then earns more through check-ins or ads. Balance: 120. Would you block the refund?
 >
-> I changed the check: don't ask if purchased credits were used. Ask if all 100 can still be reclaimed.
+> I wouldn’t.
 >
-> Enough balance: recommend a refund. Shortfall: recommend blocking and show the gap.
+> The question isn’t whether the purchased credits were used. It’s whether 100 can still be deducted.
+>
+> If yes, refund. If not, show the gap.
 
 ## 中文
 
-> 假设有人买了 100 积分，用掉 30，但账户里还剩 120。这个退款要不要拦？
+> 这里有个退款的边界情况：
 >
-> 我刚改了退款判断：不再看“买来的积分有没有用过”，而是看退款时能不能完整收回这 100 积分。
+> 有人买了 100 积分，用掉 30，后来又通过签到和广告获得了更多积分，现在余额是 120。这笔退款要拦吗？
 >
-> 余额够，就建议退款；余额不够，才建议拦截并说明还差多少。
+> 我不会。重点不是买来的积分有没有用过，而是现在能不能完整扣回这 100 积分。
+>
+> 能，就退；不能，就标出差额，再人工确认。
 
 ## 配图
 

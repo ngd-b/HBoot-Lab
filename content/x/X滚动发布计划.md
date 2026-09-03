@@ -67,7 +67,8 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 18 | 2026-09-02 | [Placement changes the trade-off](posts/18-placement-changes-the-tradeoff.md) | 已发布 |
 | 19 | 2026-09-02 | [One photo, eight stickers](posts/19-one-photo-eight-stickers.md) | 已发布 |
 | 20 | 2026-09-02 | [Credit packs are live](posts/20-credit-packs-are-live.md) | 已发布 |
-| 21 | 2026-09-02 | [Can the credits still be reclaimed?](posts/21-can-the-credits-still-be-reclaimed.md) | 待发布：稍晚 |
+| 21 | 2026-09-04 | [Can the credits still be reclaimed?](posts/21-can-the-credits-still-be-reclaimed.md) | 暂缓：需解释过多前提 |
+| 22 | 2026-09-04 | [AI can’t make users pay](posts/22-ai-cant-make-users-pay.md) | 已发布 |
 
 ## 每日进度帖
 
@@ -83,4 +84,4 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 - 暂未记录具体是哪一条帖子达到最高曝光，也没有各帖的完整互动数据。
 - 现阶段先把 100–200 作为账号的初始曝光基线，不据此判断哪类主题更有效；复盘前需补齐各帖的 Impressions、Likes、Replies、Reposts 和 Bookmarks。
 
-最近一次素材扫描时间：`2026-09-02T00:10:41+08:00`
+最近一次素材扫描时间：`2026-09-04T06:30:29+08:00`
