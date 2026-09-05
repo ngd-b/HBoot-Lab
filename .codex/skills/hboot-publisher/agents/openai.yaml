@@ -1,0 +1,4 @@
+interface:
+  display_name: "HBoot Publisher"
+  short_description: "按渠道规范创作、建档、发布并提交 HBoot 内容"
+  default_prompt: "Use $hboot-publisher to create and record the next HBoot post for the requested channel."
