@@ -109,6 +109,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 22 | 2026-09-04 | [AI can’t make users pay](posts/22-ai-cant-make-users-pay.md) | 已发布 |
 | 23 | 2026-09-04 | [No more guessing about payment orders](posts/23-no-more-guessing-about-payment-orders.md) | 已发布（中文） |
 | 24 | 2026-09-06 | [Don’t fill privacy forms from memory](posts/24-dont-fill-privacy-forms-from-memory.md) | 已发布 |
+| 25 | 2026-09-06 | [The dashboard had no field for it](posts/25-the-dashboard-had-no-field-for-it.md) | 已发布 |
 
 ## 每日进度帖
 
