@@ -27,9 +27,9 @@ An episode file should contain the existing repository structure as applicable: 
 
 When generating metadata:
 
-- 视频号 title states the full useful point.
-- 抖音 title and opening emphasize the conflict immediately.
-- 小红书 title or cover includes the series number and a searchable problem term.
+- 视频号标题最多 16 个字符。符号仅允许书名号、引号、冒号、加号、问号、百分号和摄氏度符号；不使用逗号，需要停顿或分隔时改用空格。
+- 抖音标题最多 30 个字符，标题和开头立即突出冲突。
+- 小红书标题最多 20 个字符，标题或封面包含系列编号和可搜索的问题词。
 - Descriptions summarize the concrete value without repeating the entire script.
 - Tags stay relevant and limited; do not add broad trending tags with no connection.
 
@@ -42,4 +42,5 @@ When the user says the episode is published, set the script and plan status to `
 - Only one useful topic is taught.
 - Sentences sound natural when read aloud.
 - Previous and next episodes connect without repeating each other.
+- 视频号标题不超过 16 个字符，符号只使用允许的白名单，逗号已替换为空格；抖音标题不超过 30 个字符；小红书标题不超过 20 个字符。
 - Titles, descriptions, tags, file name, number, and plan entry agree.

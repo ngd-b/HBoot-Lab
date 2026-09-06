@@ -11,6 +11,7 @@ from pathlib import Path
 
 SECTION_RE = r"(?ms)^## {heading}\s*\n(.*?)(?=^## |\Z)"
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
+VIDEO_CHANNEL_ALLOWED_SYMBOLS = frozenset("《》“”‘’\"'：:+？?%％℃")
 
 
 def get_section(text: str, heading: str) -> str | None:
@@ -24,6 +25,11 @@ def get_quote(section: str) -> str:
         if line.startswith(">"):
             lines.append(line[1:].lstrip())
     return "\n".join(lines).strip()
+
+
+def get_platform_title(section: str, platform: str) -> str:
+    match = re.search(rf"(?m)^- {re.escape(platform)}：(.*)$", section)
+    return match.group(1).strip() if match else ""
 
 
 def check_x(text: str, allow_platform_context: bool) -> tuple[list[str], str]:
@@ -64,9 +70,39 @@ def check_video(text: str) -> tuple[list[str], str]:
     first_line = next((line.strip() for line in spoken.splitlines() if line.strip()), "")
     if not first_line:
         errors.append("spoken master has no opening line")
+
+    title_section = get_section(text, "平台标题") or ""
+    title_limits = {"视频号": 16, "抖音": 30, "小红书": 20}
+    titles = {
+        platform: get_platform_title(title_section, platform)
+        for platform in title_limits
+    }
+    for platform, limit in title_limits.items():
+        title = titles[platform]
+        if not title:
+            errors.append(f"missing platform title: {platform}")
+        elif len(title) > limit:
+            errors.append(f"{platform} title is {len(title)} characters; limit is {limit}")
+    video_channel_title = titles["视频号"]
+    invalid_symbols = sorted(
+        {
+            char
+            for char in video_channel_title
+            if not char.isalnum()
+            and char != " "
+            and char not in VIDEO_CHANNEL_ALLOWED_SYMBOLS
+        }
+    )
+    if invalid_symbols:
+        errors.append(
+            "视频号 title contains unsupported punctuation or symbols: "
+            + " ".join(invalid_symbols)
+        )
+
     if not re.search(r"(?m)^- 状态：(待拍摄|已发布)", text):
         errors.append("missing or invalid episode status")
-    return errors, f"Video opening: {first_line}"
+    lengths = ", ".join(f"{platform}={len(title)}" for platform, title in titles.items())
+    return errors, f"Video opening: {first_line}; title lengths: {lengths}"
 
 
 def main() -> int:
