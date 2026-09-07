@@ -1,16 +1,22 @@
 {
   "repositories": [
     {
-      "name": "智能去背景",
+      "name": "HBoot抠图去背景",
       "path": "../cutout",
       "kind": "product",
-      "group": "智能去背景"
+      "group": "HBoot抠图去背景"
     },
     {
-      "name": "智能去背景服务",
+      "name": "HBoot抠图去背景服务",
       "path": "../cutout-server",
       "kind": "product-component",
-      "group": "智能去背景"
+      "group": "HBoot抠图去背景"
+    },
+    {
+      "name": "HBoot贴纸表情包",
+      "path": "../sticker",
+      "kind": "product",
+      "group": "HBoot贴纸表情包"
     },
     {
       "name": "急用英语",

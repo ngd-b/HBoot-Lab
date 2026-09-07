@@ -53,7 +53,8 @@ The goal is to leave a complete record of every project.
 
 | Project | Status | Product Record |
 | --- | --- | --- |
-| 智能去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
+| HBoot抠图去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
+| HBoot贴纸表情包 | 🟡 In Development / Scaffolded | [products/sticker](products/sticker/README.md) |
 | 急用英语 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
 | AI 发票助手 | ✅ Online / Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
 | Tool Website | ⏸ Paused | `products/tool-website/` |
@@ -61,7 +62,7 @@ The goal is to leave a complete record of every project.
 The active products and platform services are maintained in separate
 source-code repositories.
 
-Last progress sync: **2026-08-17**.
+Last progress sync: **2026-09-07**.
 
 ## 🧱 Shared Platforms
 
