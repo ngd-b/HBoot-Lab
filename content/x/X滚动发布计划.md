@@ -113,6 +113,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 26 | 2026-09-06 | [One page can’t answer every search intent](posts/26-one-page-cant-answer-every-search-intent.md) | 已发布 |
 | 27 | 2026-09-07 | [Four distinct avatar compositions](posts/27-four-distinct-avatar-compositions.md) | 已发布 |
 | 28 | 2026-09-07 | [Place sticker text around the subject](posts/28-place-sticker-text-around-the-subject.md) | 已发布 |
+| 29 | 2026-09-08 | [99 impressions, zero clicks](posts/29-99-impressions-zero-clicks.md) | 已发布 |
 
 ## 每日进度帖
 
