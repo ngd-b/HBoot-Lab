@@ -64,6 +64,8 @@ PostgreSQL、Redis 和 MinIO 全部由 `common-infra` 提供。Sticker Server �
 - `.github/workflows/deploy-server.yml` 监听 `server-v*`，只部署 Server。
 - `.github/workflows/deploy-web.yml` 监听 `web-v*`，只部署 Web。
 - 两个 GitHub Actions 工作流共用根目录的 `compose.yml`。
+- Server 与 Web 共用根目录一份 `.env`，仓库只提交 `.env.example`，生产 `.env` 仅保存在服务器。
+- 不在 `server/` 或 `web/` 下维护重复的环境变量文件。
 - 不创建 `deploy/`、`ops/` 或多套 Compose 目录；环境差异通过服务器变量和镜像标签表达。
 
 每次打版本标签前必须更新根目录 `CHANGELOG.md`。发布日志需要写明版本改动、配置或数据影响、验证结果和必要的回滚说明；日志版本、Git 标签和镜像标签保持一致。

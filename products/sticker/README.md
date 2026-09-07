@@ -25,7 +25,8 @@
 - 服务端已搭好统一认证 SDK 和统一 AI 能力平台客户端
 - 已确定复用 `common-infra` 的 PostgreSQL、Redis 和 MinIO，不在产品内重复部署
 - 已确定一份 Compose 配置、Server 与 Web 分开发布的规则
-- 已建立根目录 `CHANGELOG.md`，正式版本发布前必须记录日志
+- 已确定 Server 与 Web 共用根目录一份 Docker `.env`
+- 已建立 `docs/` 产品与架构文档，版本日志保留在项目根目录
 - TypeScript 检查、服务端测试和完整构建已通过
 - 正式小程序 AppID 尚未创建，暂时使用 `touristappid`，还未导入微信开发者工具
 

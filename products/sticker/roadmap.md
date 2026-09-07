@@ -11,7 +11,8 @@
 - [x] 接入统一 AI 能力平台客户端骨架
 - [x] 确定复用 `common-infra` 的 PostgreSQL、Redis 和 MinIO
 - [x] 确定单一 Compose 配置和 Server、Web 独立发布规则
-- [x] 建立版本发布日志规则和根目录 `CHANGELOG.md`
+- [x] 确定根目录单一 Docker `.env` 配置规则
+- [x] 建立 `docs/` 产品文档、架构文档和根目录版本发布日志规则
 - [x] 通过 TypeScript 检查、服务端测试和完整构建
 
 ## Next
