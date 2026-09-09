@@ -17,6 +17,7 @@ Read `content/x/X滚动发布计划.md` completely before creating or substantia
 - One post, one problem.
 - The first two lines must show a concrete problem, surprise, or contrast that a new reader can understand.
 - Then state what was actually done and the concrete result. Stop there; do not append a slogan or generic lesson.
+- A decision post must show the choice, the rejected alternative or cost, and why the choice is not obvious. It must end with one specific unresolved question that readers can answer from experience. If there is no real trade-off or open question, keep the decision in the development log instead of turning it into an X post.
 - Use short, natural developer language. Avoid translated Chinese syntax, article summaries, release logs, and forced engagement questions.
 - Mention AI only when its real action is known. Say what AI scanned, drafted, compared, generated, or changed, plus any human check that actually happened.
 - Do not invent user reactions or performance data.
@@ -43,6 +44,7 @@ When the user says the post is published, change both the post file and index to
 - Understandable without WeChat context.
 - First two lines contain a real hook.
 - One problem, one actual action, one result.
+- For a decision post: one real trade-off and one answerable open question; never use a generic `What do you think?`.
 - AI involvement is specific and factual when included.
 - Within the intended post length.
 - Draft file and index agree.
