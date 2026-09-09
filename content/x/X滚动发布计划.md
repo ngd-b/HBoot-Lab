@@ -116,6 +116,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 29 | 2026-09-08 | [99 impressions, zero clicks](posts/29-99-impressions-zero-clicks.md) | 已发布 |
 | 30 | 2026-09-08 | [Reuse the feature, not the old architecture](posts/30-reuse-the-feature-not-the-old-architecture.md) | 已发布 |
 | 31 | 2026-09-08 | [A landing page can be a dead end](posts/31-a-landing-page-can-be-a-dead-end.md) | 已发布 |
+| 32 | 2026-09-09 | [Keep AI jobs out of the client](posts/32-keep-ai-jobs-out-of-the-client.md) | 已发布 |
 
 ## 每日进度帖
 
