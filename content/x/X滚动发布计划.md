@@ -120,6 +120,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 31 | 2026-09-08 | [A landing page can be a dead end](posts/31-a-landing-page-can-be-a-dead-end.md) | 已发布 |
 | 32 | 2026-09-09 | [Keep AI jobs out of the client](posts/32-keep-ai-jobs-out-of-the-client.md) | 已发布 |
 | 33 | 2026-09-09 | [Searchable or memorable?](posts/33-searchable-or-memorable.md) | 已发布 |
+| 34 | 2026-09-10 | [No users hides three problems](posts/34-no-users-hides-three-problems.md) | 已发布 |
 
 ## 每日进度帖
 
