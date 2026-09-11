@@ -122,6 +122,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 33 | 2026-09-09 | [Searchable or memorable?](posts/33-searchable-or-memorable.md) | 已发布 |
 | 34 | 2026-09-10 | [No users hides three problems](posts/34-no-users-hides-three-problems.md) | 已发布 |
 | 35 | 2026-09-11 | [More expensive isn’t always better](posts/35-more-expensive-isnt-always-better.md) | 已发布 |
+| 36 | 2026-09-12 | [A worker restart needs a job outcome](posts/36-a-worker-restart-needs-a-job-outcome.md) | 已发布 |
 
 ## 每日进度帖
 
