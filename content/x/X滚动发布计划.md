@@ -127,6 +127,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 38 | 2026-09-13 | [Natural-language search without sharing receipts](posts/38-natural-language-search-without-sharing-receipts.md) | 已发布 |
 | 39 | 2026-09-13 | [One job per product post](posts/39-one-job-per-product-post.md) | 已发布 |
 | 40 | 2026-09-13 | [Name the metric](posts/40-name-the-metric.md) | 已发布 |
+| 41 | 2026-09-13 | [Retry the weak line](posts/41-retry-the-weak-line.md) | 已发布 |
 
 ## 每日进度帖
 
