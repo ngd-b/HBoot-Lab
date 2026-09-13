@@ -125,6 +125,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 36 | 2026-09-12 | [A worker restart needs a job outcome](posts/36-a-worker-restart-needs-a-job-outcome.md) | 已发布 |
 | 37 | 2026-09-13 | [Small preview, full-resolution export](posts/37-small-preview-full-resolution-export.md) | 已发布 |
 | 38 | 2026-09-13 | [Natural-language search without sharing receipts](posts/38-natural-language-search-without-sharing-receipts.md) | 已发布 |
+| 39 | 2026-09-13 | [One job per product post](posts/39-one-job-per-product-post.md) | 已发布 |
 
 ## 每日进度帖
 
