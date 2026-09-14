@@ -25,8 +25,8 @@
 
 ## 发布依据
 
-- [急用英语路线图](../../../products/quick-english/roadmap.md)已记录“同分类连续练习、句子级报告和薄弱句重练”完成。
-- [急用英语架构](../../../products/quick-english/architecture.md)说明练习完成后生成句子级报告，用户可以重练薄弱句或进入同分类的下一个场景。
+- [场景外语学习路线图](../../../products/quick-english/roadmap.md)已记录“同分类连续练习、句子级报告和薄弱句重练”完成。
+- [场景外语学习架构](../../../products/quick-english/architecture.md)说明练习完成后生成句子级报告，用户可以重练薄弱句或进入同分类的下一个场景。
 - 正文没有宣称该功能已经提高学习效果、留存或口语水平。
 
 ## 发布后记录

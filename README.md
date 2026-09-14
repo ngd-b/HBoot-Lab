@@ -55,14 +55,14 @@ The goal is to leave a complete record of every project.
 | --- | --- | --- |
 | HBoot抠图去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
 | HBoot贴纸表情包 | 🟡 In Development / Scaffolded | [products/sticker](products/sticker/README.md) |
-| 急用英语 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
-| AI 发票助手 | ✅ Online / Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
+| HBoot场景外语学习 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
+| 小票智能分类记账 | ✅ Online / Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
 | Tool Website | ⏸ Paused | `products/tool-website/` |
 
 The active products and platform services are maintained in separate
 source-code repositories.
 
-Last progress sync: **2026-09-07**.
+Last progress sync: **2026-09-14**.
 
 ## 🧱 Shared Platforms
 

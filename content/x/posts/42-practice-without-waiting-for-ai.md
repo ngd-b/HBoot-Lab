@@ -25,8 +25,8 @@
 
 ## 发布依据
 
-- [急用英语 README](../../../products/quick-english/README.md)明确记录默认内容预先准备，打开场景不等待 AI。
-- [急用英语架构](../../../products/quick-english/architecture.md)记录每个场景先读取预先整理的 5 句默认对话；用户点击“换一批”时，优先分配该用户未见过的共享生成批次，内容不足时才调用 DeepSeek。
+- [场景外语学习 README](../../../products/quick-english/README.md)明确记录默认内容预先准备，打开场景不等待 AI。
+- [场景外语学习架构](../../../products/quick-english/architecture.md)记录每个场景先读取预先整理的 5 句默认对话；用户点击“换一批”时，优先分配该用户未见过的共享生成批次，内容不足时才调用 DeepSeek。
 - 正文只描述已经完成的产品行为，没有声称性能提升、用户满意度或学习效果。
 
 ## 发布后记录

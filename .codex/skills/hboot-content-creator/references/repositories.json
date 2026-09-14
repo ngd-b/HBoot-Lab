@@ -19,16 +19,16 @@
       "group": "HBoot贴纸表情包"
     },
     {
-      "name": "急用英语",
+      "name": "HBoot场景外语学习",
       "path": "../urgent-English",
       "kind": "product",
-      "group": "急用英语"
+      "group": "HBoot场景外语学习"
     },
     {
-      "name": "AI 发票助手",
+      "name": "小票智能分类记账",
       "path": "../ai-invoice",
       "kind": "product",
-      "group": "AI 发票助手"
+      "group": "小票智能分类记账"
     },
     {
       "name": "技术博客",

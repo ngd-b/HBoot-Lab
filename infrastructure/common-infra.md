@@ -51,14 +51,14 @@
 | Product / Service | PostgreSQL | Redis | MinIO |
 | --- | --- | --- | --- |
 | AI 发票助手 | ✅ Shared | ✅ Shared queue | ✅ Shared |
-| 智能去背景业务服务 | ⏳ Product container | ⏳ Config only | ✅ Shared avatars |
-| 智能去背景推理服务 | — | ✅ Shared queue / status | ✅ Shared input / output |
-| 急用英语 | ✅ Shared users / learning | ✅ Shared session / cache | ✅ Shared TTS audio |
+| HBoot抠图去背景业务服务 | ⏳ Product container | ⏳ Config only | ✅ Shared avatars |
+| HBoot抠图去背景推理服务 | — | ✅ Shared queue / status | ✅ Shared input / output |
+| HBoot场景外语学习 | ✅ Shared users / learning | ✅ Shared session / cache | ✅ Shared TTS audio |
 | Unified Auth | 🧪 Configured / validating | 🧪 Configured / validating | — |
 
-急用英语已将生产环境的用户、收藏、练习记录和学习事件迁入公共 PostgreSQL，将会话、限流和搜索缓存迁入公共 Redis，并使用公共 MinIO 保存默认句子的 TTS 音频。JSON 仍作为场景内容源，本地开发环境保留轻量降级能力。
+HBoot场景外语学习已将生产环境的用户、收藏、练习记录和学习事件迁入公共 PostgreSQL，将会话、限流和搜索缓存迁入公共 Redis，并使用公共 MinIO 保存默认句子的 TTS 音频。JSON 仍作为场景内容源，本地开发环境保留轻量降级能力。
 
-智能去背景分为两个仓库：Koa 业务服务的 PostgreSQL 仍由自己的 Compose 管理，Redis 仅有预留配置；独立 `bg-remove` 推理服务已经使用公共 Redis 和 MinIO 完成任务排队、状态管理及图片存储。
+HBoot抠图去背景分为两个仓库：Koa 业务服务的 PostgreSQL 仍由自己的 Compose 管理，Redis 仅有预留配置；独立 `bg-remove` 推理服务已经使用公共 Redis 和 MinIO 完成任务排队、状态管理及图片存储。
 
 Unified Auth 的生产 Compose 已配置接入 `infra-net` 并使用公共 PostgreSQL 和 Redis；平台仍在验证，且没有接入任何现有产品，因此不计入已运行的产品依赖。
 
