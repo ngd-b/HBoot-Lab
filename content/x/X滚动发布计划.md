@@ -129,6 +129,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 40 | 2026-09-13 | [Name the metric](posts/40-name-the-metric.md) | 已发布 |
 | 41 | 2026-09-13 | [Retry the weak line](posts/41-retry-the-weak-line.md) | 已发布 |
 | 42 | 2026-09-14 | [Practice without waiting for AI](posts/42-practice-without-waiting-for-ai.md) | 已发布 |
+| 43 | 2026-09-14 | [Matching fields aren't proof](posts/43-matching-fields-arent-proof.md) | 已发布 |
 | 44 | 2026-09-16 | [Which result should win?](posts/44-retries-shouldnt-undo-user-edits.md) | 已发布 |
 
 ## 每日进度帖
