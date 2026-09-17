@@ -133,6 +133,8 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 44 | 2026-09-16 | [Which result should win?](posts/44-retries-shouldnt-undo-user-edits.md) | 已发布 |
 | 45 | 2026-09-16 | [One dialogue, two voices](posts/45-one-dialogue-two-voices.md) | 已发布 |
 | 46 | 2026-09-17 | [Offline practice still counts](posts/46-offline-practice-still-counts.md) | 已发布 |
+| 47 | 2026-09-17 | [One schema doesn't fit all documents](posts/47-one-schema-doesnt-fit-all-documents.md) | 待发布 |
+| 48 | 2026-09-18 | [One error hides an outage](posts/48-one-error-hides-an-outage.md) | 已发布 |
 
 ## 每日进度帖
 
