@@ -47,6 +47,12 @@
       "path": "../unified-auth",
       "kind": "infrastructure",
       "group": "基础设施"
+    },
+    {
+      "name": "能力服务平台",
+      "path": "../unified-ai",
+      "kind": "infrastructure",
+      "group": "基础设施"
     }
   ]
 }

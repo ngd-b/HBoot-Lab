@@ -136,6 +136,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 47 | 2026-09-17 | [One schema doesn't fit all documents](posts/47-one-schema-doesnt-fit-all-documents.md) | 待发布 |
 | 48 | 2026-09-18 | [One error hides an outage](posts/48-one-error-hides-an-outage.md) | 已发布 |
 | 49 | 2026-09-18 | [Validate the client before the quota](posts/49-validate-the-client-before-the-quota.md) | 已发布 |
+| 50 | 2026-09-18 | [The status a product reads](posts/50-the-status-a-product-reads.md) | 待发布 |
 
 ## 每日进度帖
 
@@ -146,6 +147,13 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 每连续发布 7 天复盘一次：比较曝光、回复、转发、收藏、纯文字与配图表现，以及长期主帖和当天进度帖的差异。若某个主题回应明显更好，继续深入同一个用户问题，不重复原句。
 
 语言不再作为日常变量反复测试。至少连续发布 20 条英文帖后再复盘内容表现；重点看精准关注、主页访问、回复和收藏，曝光只作为辅助指标。
+
+### 2026-09-18 曝光回落
+
+- 恢复英文发布后，近期单条曝光多在几十，未回到 9 月初约 100–200 的基线，也基本没有破百。
+- 各帖的 Impressions / Likes / Replies / Reposts / Bookmarks 仍未补齐，所以目前只能记录「曝光在几十」这一事实，不能据此判断是主题还是语言的问题。
+- 按计划口径，需至少连续发满 20 条英文帖、并重点看精准关注、主页访问、回复和收藏后再复盘内容方向；现在还没到判断门槛。
+- 对照：9 月 15 日同一天两条关于「Codex Astra 额度」的帖子（都未记入本索引）。一条「一天用完额度、还剩 6 天才重置、难道手写代码？」约 250 曝光；另一条「现在用 Claude + DeepSeek 却不想用它们生成的代码、Astra 毁了我、现在没别的可用了」约 1600 曝光。同一主题差 6 倍：更强的情绪句（Astra ruined me）+ 点名更多工具（Claude + DeepSeek）+ 落在更普遍的痛（没别的可用），比「具体额度数字 + 手写代码」更易被分发。仍缺链接和回复 / 收藏等互动数据。
 
 ### 2026-09-04 语言方向调整
 
