@@ -137,6 +137,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 48 | 2026-09-18 | [One error hides an outage](posts/48-one-error-hides-an-outage.md) | 已发布 |
 | 49 | 2026-09-18 | [Validate the client before the quota](posts/49-validate-the-client-before-the-quota.md) | 已发布 |
 | 50 | 2026-09-18 | [The status a product reads](posts/50-the-status-a-product-reads.md) | 待发布 |
+| 51 | 2026-09-21 | [One place to change AI providers](posts/51-one-place-to-change-ai-providers.md) | 已发布 |
 
 ## 每日进度帖
 
