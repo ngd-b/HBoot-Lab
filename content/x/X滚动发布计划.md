@@ -139,6 +139,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 50 | 2026-09-18 | [The status a product reads](posts/50-the-status-a-product-reads.md) | 待发布 |
 | 51 | 2026-09-21 | [One place to change AI providers](posts/51-one-place-to-change-ai-providers.md) | 已发布 |
 | 52 | 2026-09-21 | [Shared key, shared limit](posts/52-shared-key-shared-limit.md) | 已发布 |
+| 53 | 2026-09-22 | [Audit logs can store secrets](posts/53-audit-logs-can-store-secrets.md) | 已发布 |
 
 ## 每日进度帖
 
