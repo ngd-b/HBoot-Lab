@@ -1,7 +1,7 @@
 # 50｜The status a product reads
 
 - 日期：2026-09-18
-- 状态：待发布
+- 状态：已发布
 
 ## English
 
@@ -31,7 +31,7 @@
 ## 发布后记录
 
 - X 链接：
-- 实际时间：
+- 实际时间：2026-09-20 12:42:20（Asia/Shanghai）
 - Impressions：
 - Likes：
 - Replies：

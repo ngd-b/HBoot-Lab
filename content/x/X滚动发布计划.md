@@ -136,7 +136,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 47 | 2026-09-17 | [One schema doesn't fit all documents](posts/47-one-schema-doesnt-fit-all-documents.md) | 待发布 |
 | 48 | 2026-09-18 | [One error hides an outage](posts/48-one-error-hides-an-outage.md) | 已发布 |
 | 49 | 2026-09-18 | [Validate the client before the quota](posts/49-validate-the-client-before-the-quota.md) | 已发布 |
-| 50 | 2026-09-18 | [The status a product reads](posts/50-the-status-a-product-reads.md) | 待发布 |
+| 50 | 2026-09-18 | [The status a product reads](posts/50-the-status-a-product-reads.md) | 已发布 |
 | 51 | 2026-09-21 | [One place to change AI providers](posts/51-one-place-to-change-ai-providers.md) | 已发布 |
 | 52 | 2026-09-21 | [Shared key, shared limit](posts/52-shared-key-shared-limit.md) | 已发布 |
 | 53 | 2026-09-22 | [Audit logs can store secrets](posts/53-audit-logs-can-store-secrets.md) | 已发布 |
