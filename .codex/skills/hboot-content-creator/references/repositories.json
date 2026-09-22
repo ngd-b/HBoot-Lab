@@ -53,6 +53,12 @@
       "path": "../unified-ai",
       "kind": "infrastructure",
       "group": "基础设施"
+    },
+    {
+      "name": "AnythingLLM Sync",
+      "path": "../anythingllm-sync",
+      "kind": "product",
+      "group": "AnythingLLM Sync"
     }
   ]
 }
