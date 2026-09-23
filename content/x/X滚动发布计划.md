@@ -142,6 +142,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 53 | 2026-09-22 | [Audit logs can store secrets](posts/53-audit-logs-can-store-secrets.md) | 已发布 |
 | 54 | 2026-09-23 | [A small cutout flaw doesn’t need a full rerun](posts/54-local-fix-not-full-rerun.md) | 已发布 |
 | 55 | 2026-09-23 | [Frustration isn’t product interest](posts/55-frustration-isnt-product-interest.md) | 已发布 |
+| 56 | 2026-09-23 | [Daily totals hide new-post reach](posts/56-daily-totals-hide-new-post-reach.md) | 已发布 |
 
 ## 每日进度帖
 
