@@ -144,6 +144,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 55 | 2026-09-23 | [Frustration isn’t product interest](posts/55-frustration-isnt-product-interest.md) | 已发布 |
 | 56 | 2026-09-23 | [Daily totals hide new-post reach](posts/56-daily-totals-hide-new-post-reach.md) | 已发布 |
 | 57 | 2026-09-23 | [When should an AI cleanup tool stop?](posts/57-conservative-cutout-cleanup.md) | 已发布 |
+| 58 | 2026-09-25 | [Keep receipt data, reclaim the original](posts/58-receipt-data-without-the-original.md) | 已发布 |
 
 ## 每日进度帖
 
