@@ -149,6 +149,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 60 | 2026-09-26 | [Payments during account merges](posts/60-payments-during-account-merges.md) | 已发布 |
 | 65 | 2026-09-27 | [Time the file transfers](posts/65-time-the-file-transfers.md) | 已发布 |
 | 66 | 2026-09-27 | [Carry the user's choice through](posts/66-carry-the-users-choice-through.md) | 已发布 |
+| 67 | 2026-09-27 | [Two months, fewer than 100 users](posts/67-two-months-under-100-users.md) | 已发布 |
 
 ## 每日进度帖
 
