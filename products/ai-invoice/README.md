@@ -1,56 +1,54 @@
 # 小票智能分类记账
 
-拍照或上传发票后，自动完成 OCR 识别、AI 分类、台账管理和报销数据导出。
+产品已从票据识别扩展为两条独立方向：国内“记账账本”管理个人收支；海外 Receipt Web 整理、核对与导出票据。仓库内部目录保持 `ai-invoice`，本档案保留既有公开产品名称；应用名称最终以平台实际展示为准。
 
 ## Status
 
-🟢 Online / Iterating
+🟢 国内产品持续迭代；海外功能与独立版本发布记录已具备，实际公开开放及生产验收状态待确认。
 
 ## Product Goal
 
-减少个人和报销用户重复录入发票字段的时间，只聚焦“OCR 识别 + AI 自动归类”，不从第一版开始建设完整 OA、审批或财务系统。
+国内让用户随手记账、批量整理账单，以票据识别辅助录入；海外围绕上传、识别、人工核对、导出单据完成流程。
 
-## Current Features
+## Current Features — 国内
 
-- 微信小程序拍照或从相册选择文件
-- 支持 JPG、PNG 和 PDF，一次最多上传 9 张
-- PaddleOCR 识别发票、餐饮 / 超市小票、支付记录和交通票据
-- 自动判断票据类型并保持发票专属字段边界
-- 提取发票号码、交易方、金额、税额、日期和明细
-- DeepSeek 自动归入 9 类报销类别并提取小类
-- 文件哈希和发票字段双重判重
-- 失败任务重试、重新识别和重新分类
-- 自然语言查账：按时间、商家、类别、票据类型和金额查询并汇总
-- Web 票据台账、搜索、筛选和字段编辑
-- Excel / CSV 导出
-- 微信扫码登录 Web 管理台
-- 微信搜一搜结构化页面推送
-- 用户、任务和系统指标管理页面
+- 多账本、分类、资金账户、支出、收入、转账、关联退款与余额调整
+- 月度收支、分类统计、总预算与分类预算
+- CSV / XLSX 账单预览、去重提示、选择入账、整批撤销和批量改分类
+- 图片 / PDF 凭证识别，关联流水和未入账原因展示，符合条件的凭证自动入账
+- CSV / Excel 导出已入账记录
+- 套餐额度、识别页数计量、用量展示与管理员权益调整
+- 原件清理释放空间，保留识别信息与流水；清理后不再下载原件或重新识别
 
-## Product Principles
+## Current Features — 海外 Receipt Web
 
-- 小程序负责“拍、传和快速查”，Web 负责“看、改和导出”
-- OCR 成功后再执行 AI 提取和分类
-- 模型只解析自然语言查询意图，真实票据筛选和金额汇总在当前用户的数据范围内由数据库执行
-- 重复票不进入报销导出
-- 技术方案围绕最小可用报销整理流程，不扩张成企业审批平台
+- 独立英文 Web、Backend / Worker 与国内隔离的部署配置
+- 18 种常见币种、日期和币种的待确认建议、退款负数金额
+- 收据编号、订单号、交易号、票据明细、税费、折扣、小费和付款信息
+- 人工编辑、审核、金额核对、原文证据与修订记录
+- 日期／币种／类别／审核状态筛选，跨页选择、批量分类和识别重试
+- 自选导出列、明细及税额工作表、关联原件 ZIP 下载
+- Billing 积分套餐、支付查询、履约与退款处理；游客可看价格，购买和订单历史需登录
+- 多页 PDF 保留一个文档记录，处理积分按页计费；购买积分不改变每日处理、存储及 PDF 限制
+
+## Product Boundaries
+
+- 国内当前面向个人、使用人民币；只统计已入账流水，凭证识别金额不直接代表收支。
+- 转账与余额调整不计入收支；退款按实际到账月份冲减原支出类别。
+- 旧自然语言票据查询记录属于此前阶段；当前记账数据的自然语言查询尚属后续能力。
+- 海外邮箱收票仅预留适配接口，尚未接入实际收信服务。
+- 海外实际认证、OCR、存储、付款及生产验收仍需目标环境证据；版本标签不单独证明已公开上线。
 
 ## Tech Stack
 
-| Layer | Technology |
-| --- | --- |
-| Mini Program | 微信小程序原生框架 |
-| API | Python + FastAPI |
-| Database | PostgreSQL + SQLAlchemy 2.0 + Alembic |
-| Queue | Redis |
-| Worker | Python 独立任务进程 |
-| Storage | MinIO |
-| OCR | PaddleOCR PP-OCRv5 |
-| AI | DeepSeek OpenAI-compatible API |
-| Web | Next.js 16 + React 19 + Tailwind CSS |
-| Deployment | Docker + GitHub Actions + Nginx |
+FastAPI、SQLAlchemy、Alembic、PostgreSQL、Redis、MinIO；国内原生小程序及 Next.js Web，海外独立 Next.js Web；统一认证、AI 能力平台与 Billing 集成。
+
+## Progress Evidence — 2026-10-02
+
+依据 `ai-invoice@c36993e` 的 README、web-global/README 和 CHANGELOG；海外最新版本日志为 `global-v3.3.0`、`global-web-v1.7.2`。本次未获取新用户、收入或转化指标。
 
 ## Documents
 
 - [Architecture](architecture.md)
 - [Roadmap](roadmap.md)
+- [本次同步证据与状态](../../journals/2026-10-02-product-progress-sync.md)

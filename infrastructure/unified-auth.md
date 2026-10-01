@@ -1,14 +1,26 @@
 # Unified Auth
 
+## Current Progress — 2026-10-02
+
+以下原始设计保留作历史记录，其“未接入”及首次接入清单不再描述当前状态。
+
+- 抠图、场景外语学习和贴纸产品的版本日志已有统一认证及账号合并接入记录；海外 Receipt Web 也具备统一登录集成。
+- Node / Python SDK、在线会话校验、刷新、账号合并恢复已实现，不再仅是计划。
+- 平台还提供微信内容检测、支付、退款与搜索代理；已增加 Billing 客户端、产品 testing/live 状态和测试期访问控制。
+- 邮箱验证码投递失败反馈与验证码哈希存储、待支付订单过期停止查单、系统客户端产品目录授权已提交。
+- 依据：`unified-auth@b502ba0` 及各产品版本日志。不能仅凭本次本地源码核对声称所有生产认证链路已验收。
+
+## Historical Snapshot
+
 HBoot 统一用户平台，目标是让多个产品共享一套账号、登录、安全和产品关系能力。
 
-## Status
+### Status
 
 🧪 Core Flow Implemented / Not Fully Tested / Not Integrated
 
 当前仓库已经完成核心账号链路、Web 授权码流程和生产部署骨架，但尚未完成完整测试，也没有任何现有产品依赖它。以下“已实现”表示代码已经具备，不代表现有产品已接入或能力已经过生产验证。
 
-## Why
+### Why
 
 HBoot抠图去背景、HBoot场景外语学习和 AI 发票助手分别实现了自己的微信登录、Token、用户身份和 Web 登录流程。产品增加后会带来：
 
@@ -20,7 +32,7 @@ HBoot抠图去背景、HBoot场景外语学习和 AI 发票助手分别实现了
 
 Unified Auth 希望把这些重复能力收敛成公共平台。
 
-## Implemented in Code
+### Implemented in Code
 
 - Web 邮箱验证码登录
 - Google 和 GitHub OAuth
@@ -37,7 +49,7 @@ Unified Auth 希望把这些重复能力收敛成公共平台。
 - 中英文界面与语言偏好
 - 存活 / 就绪健康检查、部署后冒烟检查和标签发布工作流
 
-## Current Architecture
+### Current Architecture
 
 ```text
 Web / 微信小程序 / 产品后端
@@ -54,7 +66,7 @@ Web / 微信小程序 / 产品后端
         └── Email ────── Aliyun DirectMail / Resend
 ```
 
-## Technology
+### Technology
 
 | Layer | Technology |
 | --- | --- |
@@ -69,7 +81,7 @@ Web / 微信小程序 / 产品后端
 
 统一用户通过全局用户 ID 与各产品本地用户建立映射；统一平台只管理身份、登录设备和产品注册关系，不保存产品业务数据。
 
-## Planned Integration
+### Planned Integration
 
 ```text
 Unified Auth 自身测试
@@ -90,7 +102,7 @@ Web 产品的授权码 + PKCE 流程已经实现；小程序最小身份桥接�
 - Web 产品没有 Session 时通过 Authorization Code + PKCE 跳转统一登录页并换取身份
 - 最小接入不迁移业务数据，也不要求小程序前端和鉴权中间件一次性重构
 
-## Current Gaps
+### Current Gaps
 
 - [ ] 完成统一平台自身的功能测试
 - [ ] 建立单元测试、集成测试和端到端测试
@@ -105,7 +117,7 @@ Web 产品的授权码 + PKCE 流程已经实现；小程序最小身份桥接�
 - [ ] 为每个产品准备独立回滚方案
 - [ ] 完成首次生产部署和部署后冒烟验证
 
-## Important Boundary
+### Important Boundary
 
 在完成测试和首个产品接入之前：
 

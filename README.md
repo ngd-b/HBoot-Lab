@@ -54,26 +54,29 @@ The goal is to leave a complete record of every project.
 | Project | Status | Product Record |
 | --- | --- | --- |
 | HBoot抠图去背景 | ✅ Online / Iterating | [products/ai-cut](products/ai-cut/README.md) |
-| HBoot贴纸表情包 | 🟡 In Development / Scaffolded | [products/sticker](products/sticker/README.md) |
+| HBoot贴纸表情包 | ✅ Online / Iterating | [products/sticker](products/sticker/README.md) |
 | HBoot场景外语学习 | ✅ Online / Iterating | [products/quick-english](products/quick-english/README.md) |
 | 小票智能分类记账 | ✅ Online / Iterating | [products/ai-invoice](products/ai-invoice/README.md) |
+| AnythingLLM Sync | 🧪 Implemented / Community Review | [products/anythingllm-sync](products/anythingllm-sync/README.md) |
 | Tool Website | ⏸ Paused | `products/tool-website/` |
 
 The active products and platform services are maintained in separate
 source-code repositories.
 
-Last progress sync: **2026-09-14**.
+Last progress sync: **2026-10-02**. See [verified progress and remaining validation](journals/2026-10-02-product-progress-sync.md).
 
 ## 🧱 Shared Platforms
 
 | Platform | Status | Record |
 | --- | --- | --- |
 | Common Infrastructure | ✅ Running / Iterating | [common-infra](infrastructure/common-infra.md) |
-| Unified Auth | 🧪 Core Flow Implemented / Not Integrated | [unified-auth](infrastructure/unified-auth.md) |
+| Unified Auth | ✅ Integrated / Iterating | [unified-auth](infrastructure/unified-auth.md) |
+| AI Capability Platform | 🧪 Implemented / Iterating | [unified-ai](infrastructure/unified-ai.md) |
 
 Common Infrastructure provides shared PostgreSQL, Redis, and MinIO services.
-Unified Auth has completed its core account flow and Web authorization-code
-flow, but none of the products depend on it yet.
+Unified Auth is integrated into product code for login, session validation and account merging.
+The AI platform provides shared capability routing and task execution; overseas Receipt Web also integrates Billing.
+Deployment and public availability are recorded separately from implementation.
 
 ---
 

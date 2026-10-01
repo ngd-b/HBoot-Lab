@@ -46,7 +46,7 @@
 - 部署失败自动恢复上一版文件和容器配置
 - PostgreSQL、Redis 和 MinIO 备份说明
 
-## Current Product Adoption
+## Historical Product Adoption
 
 | Product / Service | PostgreSQL | Redis | MinIO |
 | --- | --- | --- | --- |
@@ -61,6 +61,12 @@ HBoot场景外语学习已将生产环境的用户、收藏、练习记录和学
 HBoot抠图去背景分为两个仓库：Koa 业务服务的 PostgreSQL 仍由自己的 Compose 管理，Redis 仅有预留配置；独立 `bg-remove` 推理服务已经使用公共 Redis 和 MinIO 完成任务排队、状态管理及图片存储。
 
 Unified Auth 的生产 Compose 已配置接入 `infra-net` 并使用公共 PostgreSQL 和 Redis；平台仍在验证，且没有接入任何现有产品，因此不计入已运行的产品依赖。
+
+## Progress Sync — 2026-10-02
+
+上表保留早期接入快照。贴纸已有公共 PostgreSQL / Redis / MinIO 接入与版本记录；统一认证也已被多个产品实际集成，不再是完全不影响产品的独立试验。能力平台及海外票据配置使用独立业务凭据和地域隔离。
+
+本次 `common-infra@075bcc2` 自 2026-09-14 起无新增提交；没有读取生产配置，未据此更新每个产品实际运行的数据库和存储拓扑。
 
 ## Why It Matters
 
