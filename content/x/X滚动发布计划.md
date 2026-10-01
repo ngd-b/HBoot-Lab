@@ -178,6 +178,7 @@ X 帖不是文章摘要，也不是版本更新日志。它首先要让尚未了
 | 68 | 2026-09-29 | [Reward the verifiable action](posts/68-reward-the-verifiable-action.md) | 已发布 |
 | 69 | 2026-09-29 | [A ¥20 cloud fee and a backend](posts/69-twenty-yuan-cloud-fee.md) | 已发布 |
 | 70 | 2026-10-02 | [Three apps, three setups](posts/70-three-apps-three-setups.md) | 已发布 |
+| 72 | 2026-10-02 | [Checkout timeout isn't rejection](posts/72-checkout-timeout-isnt-rejection.md) | 已发布 |
 
 ## 每日进度帖
 
